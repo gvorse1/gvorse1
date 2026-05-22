@@ -709,8 +709,6 @@
         };
         closeModal.addEventListener('click', closeFunc);
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) closeFunc(); });
-
-        try { if (window.history && window.history.pushState && window.location.protocol !== 'file:') { window.history.pushState({}, document.title, "/gvorse1"); } } catch(e) {}
     </script>
 </body>
 </html>
